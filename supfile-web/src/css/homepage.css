@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+*,
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  width: 100%;
+}
+a {
+  color: #4d413f;
+  cursor: pointer;
+  text-decoration: none;
+}
+a:active {
+  text-decoration: blink;
+}
+a:hover {
+  text-decoration: underline;
+  color: green !important;
+}
+a:visited {
+  text-decoration: none;
+  color: #4d413f;
+}
+
+.logo {
+  margin-top: 60px;
+  margin-left: 100px;
+  background: #fff;
+  width: 1000px;
+  float: left;
+}
+
+#loginbar {
+  font: 12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+  float: right;
+  margin-right: 200px;
+  margin-top: 45px;
+  color: #4d413f;
+}
+#center,
+#register,
+#login,
+#homepage {
+  float: right;
+}
+
+.pic {
+  width: 100%;
+  height: 630px;
+  overflow: hidden;
+}
+
+.pic ul li {
+  width: 100%;
+  height: 630px;
+  position: relative;
+}
+
+.pic ul li img {
+  position: absolute;
+  left: -1180px;
+  top: 0px;
+}
+
+/*导航条*/
+.nav {
+  width: 100%;
+  height: 70px;
+  /*background:rgba(255,255,255,0.5);*/
+  background: #fff;
+  opacity: 0.75; /*透明度*/
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+/*进度条*/
+.bar {
+  width: 1180px;
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  bottom: 0px;
+  margin-left: -590px;
+  background: url(../images/bar.png);
+}
+
+.bar p {
+  width: 0px;
+  height: 3px;
+  background: #00925f;
+  margin-left: 3px;
+}
+/*android 下载图标*/
+.android_logo,
+.web_logo,
+.ie_logo,
+.ff_logo,
+.ss_logo {
+  width: 65px;
+  height: 65px;
+  float: right;
+}
+#login-dowload {
+  margin-top: 40px;
+  margin-right: 20%;
+  margin-bottom: 20px;
+}
+#tips {
+  width: auto;
+  margin-top: 12px;
+  float: left;
+  margin-left: 20%;
+  font-family: "PingFang SC", "Source Han Sans SC", "Noto Sans CJK SC", "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei UI", sans-serif !important;
+  font-size: 20px;
+  color: #999999;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+
+#li1 {
+  background: url(../images/bg1.jpg);
+  text-align: center;
+}
+
+#li2 {
+  background: url(../images/bg2.jpg);
+  text-align: center;
+}
+
+#li3 {
+  background: url(../images/bg3.jpg);
+  text-align: center;
+}
+
+
+
+
+
+
+#loginForm {
+  width: 30%;
+  height: 40%;
+  display: box;
+  float: left;
+  position: absolute;
+  left: 35%;
+  top: 30%;
+  background: white;
+  padding: 20px 30px;
+
+}
+
+#loginForm input[type=text], #loginForm input[type=password]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#loginForm input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+#loginForm input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+#loginForm button.cancelbtn {
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+#warn {
+  color: #f44336;
+}

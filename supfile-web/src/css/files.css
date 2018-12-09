@@ -1,0 +1,191 @@
+#leftBar {
+  border-right: 2px solid #00897B;
+  display: inline-block;
+  position: fixed;
+  width: 300px;
+  height: 100%;
+}
+
+#filesOption, #settingsOption {
+  cursor: pointer;
+  width: 100%;
+  height: 60px;
+  font-size: 24px;
+  color: #393939;
+  text-align: center;
+}
+
+#logout {
+  cursor: pointer;
+  position: absolute;
+  bottom: 110px;
+  width: 100%;
+  height: 40px;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  background-color: #009688;
+}
+
+#filesOption:hover, #settingsOption:hover {
+  background-color: #E0F2F1;
+}
+
+#logout:hover {
+  opacity: 0.9;
+}
+
+#mainContent {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: fixed;
+}
+
+#files {
+  margin-left: 302px;
+  width: 100%;
+}
+
+#fileList {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+#fileList ul {
+  overflow: scroll;
+  width: 100%;
+  height: 100%;
+}
+
+.fileItem {
+  width: 100%;
+  display: flex;
+  height: 50px;
+  border-bottom: 1px solid #B2DFDB;
+}
+
+.fileItem p {
+  cursor: pointer;
+  vertical-align: middle;
+  padding: 10px 10px;
+  color: #393939;
+  width: 60%;
+  font-size: 20px;
+}
+
+.fileItem img {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  margin: 7px 10px 7px 30px;
+}
+
+img.downloadImg {
+  margin: 7px 10px 7px 10px;
+  cursor: pointer;
+}
+
+img.renameImg {
+  margin: 7px 10px 7px 60px;
+  cursor: pointer;
+}
+
+.fileWrapper {
+  display: inline-block;
+}
+
+.optionSelected {
+  color: #fff !important;
+  background-color: #009688;
+}
+
+.optionSelected:hover {
+  background-color: #009688 !important;
+}
+
+#operationBar {
+  align-content: flex-end;
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  background-color: #00897B;
+}
+
+#operationBar img {
+  margin: 7px 10px;
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+}
+
+#operationBar p {
+  display: inline-block;
+  margin: 13px 10px 13px 0px;
+}
+
+#uploadAction, #newFolderAction, #backAction {
+  cursor: pointer;
+  display: inline-flex;
+  width: auto;
+  height: 100%;
+  margin: 0px 10px;
+}
+
+#uploadAction:hover, #newFolderAction:hover, #backAction:hover {
+  opacity: 0.8;
+}
+
+#backAction {
+  margin-right: 40px;
+}
+
+#uploadForm, #newFolderForm, #renameForm {
+  width: 24%;
+  height: 16%;
+  display: box;
+  float: left;
+  position: absolute;
+  left: 38%;
+  top: 24%;
+  background: white;
+  padding: 20px 30px;
+  border: 2px solid #00897B;
+  border-radius: 2px;
+}
+
+#uploadForm input[type=file], #newFolderForm input[type=text], #renameForm input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#uploadForm button[type=submit], #newFolderForm button[type=submit], #renameForm button[type=submit] {
+  background-color: #00897B;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 28%;
+}
+
+button.cancelbtn {
+  color: white;
+  float: right;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 28%;
+  padding: 14px 20px;
+  background-color: #80CBC4;
+}
+
+button:hover {
+  opacity: 0.85;
+}
